@@ -1,0 +1,14 @@
+import java.util.scanner;
+public class Java2 {
+  
+  
+  public static void main(String[] args) { 
+    Scanner sc=new Scanner(System.in);
+    String name=sc.next();
+    System.out.println("wlcm to java"+name);
+    
+  }
+  
+  /* ADD YOUR CODE HERE */
+  
+}
