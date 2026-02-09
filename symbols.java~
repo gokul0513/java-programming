@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class symbols{
+  public static void main(String args[]){
+    Scanner sc=new.Scaneer(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    int c=sc.nextInt();
+    String sym=sc.next();
+    switch(sym){
+      case add:
+      c=a+b;
+      System.oput.println("add"+c);
+      break;
+      case sub:
+        c=a-b;
+      System.oput.println("sub"+c);
+      break;
+      case mul:
+        c=a*b;
+      System.oput.println("mul"+c);
+      break;
+      case div:
+        c=a/b;
+      System.oput.println("div"+c);
+      break;
+      default:
+      System.oput.println("invalid symbol");
+    }}}
