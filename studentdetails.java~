@@ -1,0 +1,34 @@
+import java.util.Scanner;
+class studentdetails{
+  int sno;
+  String name;
+  int mark1;
+  int mark2;
+  int mark3;
+  student(int s,string n,int m1,int m2,int m3){
+    sno=s;
+    name=n;
+    mark1=m1;
+    mark2=m2;
+    mark3=m3;
+  }
+  void calculate{
+    int m=m1+m2+m3;
+  }
+  void disp(){
+    System.out.println("roll number:"+sno);
+    System.out.println("student name:"+name);
+    System.out.println(" total marks:"+m);
+  }
+  public class gkl{
+    public static void main(String args[]){
+      Scanner sc=new Scanner(System.in);
+      int sno=sc.nextInt();
+      String name=sc.next();
+      int marks=sc.nextInt();
+      student s1=new student(sno,name,marks)
+      s1.calculate();
+      s1.disp();
+    }}}
+    
+  

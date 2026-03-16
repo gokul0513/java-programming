@@ -1,0 +1,13 @@
+class thw2{
+  static void divide()throws new ArithmeticException{
+    int a=10/2;
+  }
+  public static void main(String args[]){
+    try{
+      divide()
+    }
+    catch(ArithmeticException e){
+      System.out.println("exception handled in main");
+    }
+  }
+}

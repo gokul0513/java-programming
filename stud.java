@@ -1,0 +1,70 @@
+import java.util.Scanner;
+class studdetails{
+  int rno;
+  String name;
+  String dept;
+  int age;
+  int total;
+  int avg;
+  studdetails(int r,String n, String d,int a){
+    rno=r;
+    name=n;
+    dept=d;
+    age=a;
+ }
+}
+  class marks extends studdetails{
+    int mark1;
+    int mark2;
+    int mark3;
+    marks(int r,String n,String d,int a,int m1,int m2,int m3){
+      super(r,n,d,a);
+      mark1=m1;
+      mark2=m2;
+      mark3=m3;
+    }
+    void calc(){
+       total=mark1+mark2+mark3;
+       avg=total/3;
+    }
+       void result(){
+       if(mark1>40&&mark2>40&&mark3>40){
+         System.out.println("result is pass");
+       }
+         else{
+            System.out.println("result is fail");
+         }
+    }
+    
+         void disp(){
+           System.out.println("student roll number:"+rno);
+           System.out.println("student name:"+name);
+           System.out.println("department:"+dept);
+           System.out.println("age:"+age);
+           System.out.println("total marks:"+total);
+           System.out.println("average:"+avg);
+         }
+  }
+         public class stud{
+            public static void main(String args[]){
+      Scanner sc=new Scanner(System.in);
+      int rno=sc.nextInt();
+      String name=sc.next();
+      String dept=sc.next();
+      int age=sc.nextInt();
+      int mark1=sc.nextInt();
+      int mark2=sc.nextInt();
+      int mark3=sc.nextInt();
+      marks d1=new marks(rno,name,dept,age,mark1,mark2,mark3);
+      d1.calc();
+      d1.disp();
+      d1.result();
+            }
+         }
+    
+  
+
+           
+           
+        
+  

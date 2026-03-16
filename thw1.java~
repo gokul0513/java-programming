@@ -1,0 +1,14 @@
+class thw1{
+  public static void main(String args[]){
+    static void checkage(Int age)
+      if(age>18){
+      throw new ArthmeticException (" eligible");
+    }
+    else{
+      System.out.println(" not eligible");
+    }
+    checkage(16);
+  }
+}
+
+                                      

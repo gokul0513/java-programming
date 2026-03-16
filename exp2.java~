@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class exp2{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    try{
+      int a=sc.nextInt();
+    }
+    catch(NumberFormatException e){
+      System.out.println("number format error");
+    }
+  }
+}
+     
+  

@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class exp1{
+  public static void main(String args[]){
+    try{
+      int arr[]=new arr[5];
+      Scanner sc=new Scanner(System.in);
+      int b=sc.nextInt();
+      int a=10/b;
+      arr[7]=10;
+    }
+    catch(ArithmeticException e){
+      System.out.println("can't divided by zero");
+    }
+    catch(ArrayIndexOfBoundsException e){
+      System.out.println("array index is not valid");
+    }
+  }
+}
+      
+                       
